@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="сладкая1.css">
+</head>
+<body>
+    <div class="nazvanie"><p class="nam">Кислая Фiрма</p></div>
+    <div class="line"></div>
+    <div class="ziza"><p class="poka">Все показатели в норме</p></div>
+
+    <div class="ziza1">
+        <div class="pic"></div>
+        <p class="T">Температура</p>
+    </div>
+    <div class="ziza2">
+        <div class="pic2"></div>
+        <p class="V">Влага</p>
+    </div>
+    <div class="ziza3">
+        <div class="pic3"></div>
+        <p class="U">Уровень жидкости</p>
+    </div>
+    <div class="ziza4">
+        <div class="pic4"></div>
+        <p class="W">Вентиляция</p>
+    </div>
+
+<div class="lineV"></div>
+<div class="line2"></div>
+
+
+<div>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div>
+    <label class="switch1">
+      <input type="checkbox">
+      <span class="slider1"></span>
+    </label>
+  </div>
+
+  <div>
+    <label class="switch2">
+      <input type="checkbox">
+      <span class="slider2"></span>
+    </label>
+  </div>
+
+  <div class="lamp"></div>
+  <p class="svet">Управление освещением</p>
+  <p class="lvl1">Уровень А</p>
+  <p class="lvl2">Уровень Б</p>
+  <p class="lvl3">Уровень В</p>
+  <div class="line3"></div>
+
+  <div class="poliv"></div>
+  <p class="upoliv"> Управление поливом</p>
+  
+  <div class="line4"></div>
+  <div class="kam"></div>
+  <div class="border">
+    <div class="line5"></div>
+    <div class="biba1"><p class="p1">Шпикачка</p></div>
+    <div class="biba2"><p class="p2">Тан</p></div>
+    <div class="biba3"><p class="p3">Чурчхела</p></div>
+    <div class="analgin"></div>
+  </div>
+  <p class="video">Система видеонаблюдения</p>
+
+  <label for="zamimba" class="zloy">Нажми</label>
+<input type="checkbox" id="zamimba">
+<div class="text">сигнала нет</div>
+  
+    <p class="zametki">Заметки</p>
+  <div class="note"></div>
+  <div class="border1">
+    <div class="inline"></div>
+  </div>
+
+  <div class="g1"><p class="tx1">Заметка 1</p></div>
+  <div class="g2"><p class="tx2">Заметка 2</p></div>
+  <div class="g5"><p class="tx3">Новая заметка</p></div>
+
+<form>
+  <input type="text" id="fname" name="fname">
+</form>
+
+<div class="linee"></div>
+
+
+  <div class="""slidecontainer">
+    <input type="range" min="1" max="10" value="5" class="zimbaba" id="myRange">
+    <p class="litre">Литр: <span id="demo"></span></p>
+  </div>
+  
+  <script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+  
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+  </script>
+     <div id="id_clock"></div>
+    <script>digitalClock();</script>
+<script>  
+        setInterval(function () {
+            var now = new Date();
+            var clock = document.getElementById("clock");
+            clock.innerHTML = now.toLocaleTimeString();
+        }, 1000);
+        </script>
+        <span id="clock"
+        style="color:rgb(0, 0, 0);">
+        </span>
+        
+        <script src="сладкая1.js"></script>
+</body>
+</html>
